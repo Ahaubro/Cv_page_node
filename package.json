@@ -1,10 +1,9 @@
 {
+"scripts": {
+    "start": "node app.js"
+    },
   "nodemonConfig": {
     "ext": "js,css,html"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "n": "nodemon.cmd app.js"
   },
   "type": "module",
   "dependencies": {
