@@ -1,10 +1,11 @@
 import express from "express";
-import ssr from "./ssr.js"
+import ssr from "./Server/ssr.js"
 import nodemailer from "nodemailer";
 
 const app = express();
 
-app.use(express.static("../Client/Public/"));
+//Evt. ../Client/Public - Hvis app rykkes ind i server mappen
+app.use(express.static("./Client/Public/"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
