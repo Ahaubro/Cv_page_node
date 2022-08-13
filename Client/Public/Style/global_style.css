@@ -101,4 +101,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 450px;
 }
+
+.mydiv{
+    max-height: 450px;
+}
+
