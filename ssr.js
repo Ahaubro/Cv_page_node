@@ -5,7 +5,7 @@ const ssr = {
 
     loadFile: function(file) {
         // ./public/ - Hvis app.js rykkes ind i Server mappen igen
-        return fs.readFileSync('.../Public/' + this.directory + file).toString();
+        return fs.readFileSync(this.directory + file).toString();
     },
 
     replace: function(page, replacements) {
@@ -24,12 +24,12 @@ const ssr = {
     }
 };
 
-ssr.directory = '../../Client/Public/Components';
+ssr.directory = './Client/Public/Components';
 const navbar = ssr.loadFile("/navbar.html")
 const footer = ssr.loadFile("/footer.html")
 
 
-ssr.directory = '../../Client/Public/Pages';
+ssr.directory = './Client/Public/Pages';
 const template_page_template = ssr.loadFile('/template_page.html')
 const template_page = ssr.replace(template_page_template, { navbar, footer })
 
