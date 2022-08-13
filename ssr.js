@@ -36,14 +36,14 @@ const template_page = ssr.replace(template_page_template, { navbar, footer })
 
 
 const home_page = ssr.replace(template_page, {
-    title: 'Alex page',
+    title: 'ACHJ.com',
     styles: '',
     content: '/index.html'
 });
 
 
 const cv_page = ssr.replace(template_page, {
-    title: 'Alex cv',
+    title: "Alex' CV",
     styles: '',
     content: '/cv_page.html'
 });
