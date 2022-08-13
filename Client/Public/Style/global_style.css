@@ -6,17 +6,13 @@
     color: rgb(0, 0, 0);
 }
 
-li:hover{
-    background-color: rgb(180, 176, 176);
-    transition: 0.3s;
-}
-
 .a:hover{
-    color: #f7af5d;
+    color:  #0d6efd;
     transition: 0.2s;
+    background-color: #eeeeee;
 }
 
-.pchead{
+/* .pchead{
     background: rgb(102, 101, 101);
     padding: 5px 5px;
     text-align: center;
@@ -41,11 +37,7 @@ li:hover{
     border-radius: 6px;
     color: rgb(245, 240, 230);
 
-}
-
-.con{
-    background-color: chocolate;
-}
+} */
 
 .posmail{
     display: flex;
@@ -102,4 +94,11 @@ body {
 
 .myh2{
     font-size: 30px;
+}
+
+#tablescenter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
