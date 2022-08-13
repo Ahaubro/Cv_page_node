@@ -1,0 +1,62 @@
+
+
+<br>
+<h1 class="display-3 text-primary text-center"> Kontakt </h1>
+<br>
+
+<br>
+<div class="posmail">
+    <div>
+        <div id="input_pos">
+            <input type="text" id="name" placeholder="Fulde navn"> </textarea>
+            <input type="text" id="email" placeholder="Mail adresse"> </textarea>
+        </div>
+        <textarea type="text" id="message" placeholder="message"> </textarea>
+    </div>
+</div>
+
+<div id="btn_pos">
+    <button class="sendbtn" onclick="test()">Send mail</button>
+</div>
+
+<br>
+<br>
+
+<h2 class="text-secondary myh2 text-center"> Eller ring idag på nummeret: </h2>
+<br>
+<h2 class="text-secondary myh2 text-center"> <i class="bi bi-telephone-outbound"> &emsp;  20 35 57 29 </i> </h2>
+
+</body>
+
+
+
+<script>
+
+  async function test(){
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const user = {}
+
+    user.name = name;
+    user.email = email;
+    user.message = message;
+
+    console.log(name, email, message)
+
+
+    if(user.name != undefined && user.email != undefined && user.message != undefined) {
+        const res = await fetch(`/sendmail`, {
+        headers: {
+          "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify(user)
+      });
+
+    }
+  }
+
+</script>
+

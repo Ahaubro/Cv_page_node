@@ -1,0 +1,105 @@
+.a {
+    display: block;
+    padding: 7px 10px;
+    text-decoration: none;
+    font-weight: 450;
+    color: rgb(0, 0, 0);
+}
+
+li:hover{
+    background-color: rgb(180, 176, 176);
+    transition: 0.3s;
+}
+
+.a:hover{
+    color: #f7af5d;
+    transition: 0.2s;
+}
+
+.pchead{
+    background: rgb(102, 101, 101);
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 3px;
+    color: rgb(245, 240, 230);
+
+}
+
+.pstor {
+    font-size: 27px;
+
+}
+
+.plille {
+    font-size: 17px;
+
+}
+
+.pcbody{
+    background: rgb(58, 57, 57);
+    padding: 5px 5px;
+    border-radius: 6px;
+    color: rgb(245, 240, 230);
+
+}
+
+.con{
+    background-color: chocolate;
+}
+
+.posmail{
+    display: flex;
+    justify-content: center;
+    border: none;
+
+}
+
+textarea{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+#input_pos{
+    display: flex;
+    justify-content: center;
+}
+
+#btn_pos{
+    display: flex;
+    justify-content: center;
+}
+
+.sendbtn{
+    background-color: rgb(133, 245, 133);
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.sendbtn:hover{
+    background-color: rgb(12, 180, 12);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom:160px;
+}
+
+body {
+    margin-bottom: 160px;
+}
+
+.myfooter{
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+}
+
+.myh2{
+    font-size: 30px;
+}
