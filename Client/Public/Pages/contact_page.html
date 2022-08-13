@@ -19,7 +19,7 @@
   </div>
 
   <div id="btn_pos">
-      <button class="sendbtn" onclick="test()">Send mail</button>
+      <button class="sendbtn" onclick="sendMail()">Send mail</button>
   </div>
 
   <!-- <div class="coninfo_pos">
@@ -39,7 +39,7 @@
 
 <script>
 
-  async function test(){
+  async function sendMail(){
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
@@ -50,8 +50,7 @@
     user.email = email;
     user.message = message;
 
-    console.log(name, email, message)
-
+    clear();
 
     if(user.name != undefined && user.email != undefined && user.message != undefined) {
         const res = await fetch(`/sendmail`, {
@@ -61,8 +60,13 @@
         method: "POST",
         body: JSON.stringify(user)
       });
-
     }
+  }
+
+  function clear(){
+    const name = document.getElementById("name").value = '';
+    const email = document.getElementById("email").value = '';
+    const message = document.getElementById("message").value = '';
   }
 
 </script>
