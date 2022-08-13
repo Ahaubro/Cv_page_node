@@ -1,5 +1,5 @@
 import express from "express";
-import ssr from "./Server/ssr.js"
+import ssr from "./ssr.js"
 import nodemailer from "nodemailer";
 
 const app = express();
