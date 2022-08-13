@@ -62,7 +62,8 @@ body {
 .myfooter{
     position: absolute;
     bottom: 3%;
-    width: 99.33%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .myh2{
