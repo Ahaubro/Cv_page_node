@@ -5,7 +5,7 @@ const ssr = {
 
     loadFile: function(file) {
         // ./public/ - Hvis app.js rykkes ind i Server mappen igen
-        return fs.readFileSync('.../public/' + this.directory + file).toString();
+        return fs.readFileSync('.../Public/' + this.directory + file).toString();
     },
 
     replace: function(page, replacements) {
