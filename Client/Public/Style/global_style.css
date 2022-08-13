@@ -1,6 +1,6 @@
 .a {
     display: block;
-    padding: 9px 21px;
+    padding: 9px 31px;
     text-decoration: none;
     font-weight: 450;
     color: rgb(0, 0, 0);
@@ -62,7 +62,7 @@ body {
 .myfooter{
     position: absolute;
     bottom: 3%;
-    width: 100%;
+    width: 99.33%;
 }
 
 .myh2{
