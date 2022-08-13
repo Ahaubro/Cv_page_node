@@ -7,37 +7,10 @@
 }
 
 .a:hover{
-    color:  #0d6efd;
+    color:  #0dcaf0;
     transition: 0.2s;
     background-color: #eeeeee;
 }
-
-/* .pchead{
-    background: rgb(102, 101, 101);
-    padding: 5px 5px;
-    text-align: center;
-    border-radius: 3px;
-    color: rgb(245, 240, 230);
-
-}
-
-.pstor {
-    font-size: 27px;
-
-}
-
-.plille {
-    font-size: 17px;
-
-}
-
-.pcbody{
-    background: rgb(58, 57, 57);
-    padding: 5px 5px;
-    border-radius: 6px;
-    color: rgb(245, 240, 230);
-
-} */
 
 .posmail{
     display: flex;
