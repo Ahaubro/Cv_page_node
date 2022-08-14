@@ -80,6 +80,11 @@ body {
 
 .mydiv{
     max-height: 450px;
+    display: flex;
+    position: absolute;
+    left: 26%;
+    top: 25%;
+    height: auto;
 }
 
 
