@@ -117,3 +117,7 @@ h3{
     position:relative;
     text-align: center;
 }
+
+.index_body{
+    overflow: hidden;
+}
