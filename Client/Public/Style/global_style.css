@@ -56,7 +56,7 @@ html {
 }
 
 body {
-    margin-bottom: 160px;
+    margin-bottom: 50px;
 }
 
 .myfooter{
@@ -64,6 +64,7 @@ body {
     bottom: 3%;
     width: 100%;
     overflow: hidden;
+    margin-top: auto;
 }
 
 .myh2{
@@ -97,5 +98,22 @@ body {
 }
 
 h3{
+    text-align: center;
+}
+
+.header_div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.outer_div{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.index_div{
+    position:relative;
     text-align: center;
 }
